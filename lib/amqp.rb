@@ -38,7 +38,10 @@ module AMQP
       :timeout => nil,
 
       # logging
-      :logging => false
+      :logging => false,
+
+      # TLS
+      :start_tls => ENV['AMQP_TLS']
     }
   end
 
